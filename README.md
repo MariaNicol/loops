@@ -16,7 +16,6 @@
 
             }
             Console.WriteLine("sum= " + sum + ", min= " + min);
-
 //#6
             // намира сумата на ел и макс ел
             int n = int.Parse(Console.ReadLine());
