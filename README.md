@@ -1,6 +1,19 @@
 # loops
 задачи_сорсове за цикли(преговор)💯
+//#6
+// намира сумата на ел и макс ел
+int n = int.Parse(Console.ReadLine());
+            int sum = 0;
+            int max = 0; 
+            for ( int i=0; i<n; i++)
+            {
+                 int k = int.Parse(Console.ReadLine());
+                sum = sum + k ;
+                if (k > max) max = k;
+               // Console.WriteLine(sum);
 
+            }
+            Console.WriteLine("sum= "+ sum+ ", max= " + max);
 // #5 
 // Да се напише програма, която въвежда n цели числа и ги сумира.
 // Вход: 2  -> Изход: 14
