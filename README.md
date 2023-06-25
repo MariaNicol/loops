@@ -7,13 +7,14 @@
             int sum = 0;
             int min = 1000000; // за разлика от макс където може да му дадем първоначално стойност=0, при мин не можем,
                          // защото 0 може да се окаже най-малката стойност дори и сред въведените от числа 
+
+
+                         
             for (int i = 0; i < n; i++)
             {
                 int k = int.Parse(Console.ReadLine());
                 sum = sum + k;
                 if (k < min) min = k;
-                // Console.WriteLine(sum);
-
             }
             Console.WriteLine("sum= " + sum + ", min= " + min);
 //#6
