@@ -1,6 +1,34 @@
 # loops
 задачи_сорсове за цикли(преговор)💯
 
+
+
+//11
+
+ int n = int.Parse(Console.ReadLine());
+            int sum = 0;
+            int max = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                int k = int.Parse(Console.ReadLine());
+                sum = sum + k;
+                if (k > max)
+                    max = k;
+
+            }
+
+
+           //int l = 0;
+            if (max == sum - max)
+            {
+                Console.WriteLine("YEZ  " + max);
+            }
+            else
+            {
+                //l = sum - max;
+                Console.WriteLine(Math.Abs(max - (sum - max)) + " no"); 
+            }
 //#10
 //сумиране на гласните букви 
             // a =1 , e=2, i=3, o=4, u=5
