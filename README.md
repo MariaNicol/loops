@@ -1,6 +1,58 @@
 # loops
 задачи_сорсове за цикли(преговор)💯
 
+
+
+//изпитни задачи  - https://csharp-book.softuni.bg/chapter-05-loops-exam-problems.html
+#1 Задача: хистограма
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace procenti_masivi_izpitnizad1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int br1 = 0, br2 = 0, br3 = 0, br4 = 0, br5 = 0;
+            double pr1 = 0, pr2 = 0, pr3 = 0, pr4 = 0, pr5 = 0;
+            int n = int.Parse(Console.ReadLine()); // br nums
+            for (int i = 0; i < n; i++)
+            {
+                int k = int.Parse(Console.ReadLine());
+                if (k >= 0 && k < 200)
+                { br1++; }
+                else if (k >= 200 && k <=399)
+                { br2++; }
+                else if (k >= 400 && k <=599)
+                { br3++; }
+                else if (k >= 600 && k <=799)
+                { br4++; }
+                else 
+                { br5++; }
+            }
+
+             pr1 = ((double)br1 / n) * 100;
+             pr2 = ((double)br2 / n) * 100;
+             pr3 = ((double)br3 / n) * 100;
+             pr4 = ((double)br4 / n) * 100;
+             pr5 = ((double)br5 / n) * 100;
+
+            Console.WriteLine(Math.Round(pr1,2));
+            Console.WriteLine(Math.Round(pr2, 2));
+            Console.WriteLine(Math.Round(pr3, 2));
+            Console.WriteLine(Math.Round(pr4, 2));
+            Console.WriteLine(Math.Round(pr5, 2));
+
+        }
+    }
+}
+
+
 //12 Задача: четни / нечетни позиции
 
 Напишете програма, която чете n числа и пресмята сумата, минимума и максимума на числата на четни и нечетни позиции (броим от 1). Когато няма минимален / максимален елемент, отпечатайте "No"
