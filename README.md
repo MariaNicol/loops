@@ -3,7 +3,36 @@
 
 
 
+
 //изпитни задачи  - https://csharp-book.softuni.bg/chapter-05-loops-exam-problems.html
+#2 - грешна
+
+ int age = int.Parse(Console.ReadLine());
+            double cp = double.Parse(Console.ReadLine()); // цена пералня
+            int ci = int.Parse(Console.ReadLine()); // цена на играчка
+
+            int moneyFromBD = 0;
+            int BrIgracki = 0;
+            int spr = 0; // prd = pari ot rd-ta , bri = broi igra4ki , spesteni pari
+
+            for (int i = 0; i <= age; i++)
+            {
+                if (age % 2 == 0)
+                {
+                    spr = moneyFromBD - 1;
+                    moneyFromBD += 10;
+                }
+                else
+                {
+                    BrIgracki++;
+                }
+
+                spr = BrIgracki * ci;
+
+            }
+            if (spr > cp) { Console.WriteLine("YEZ" + Math.Round((spr - cp), 2)); }
+
+            else { Console.WriteLine("NO" + Math.Round((cp - spr), 2)) ; }
 #1 Задача: хистограма
 
 using System;
