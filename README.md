@@ -5,6 +5,44 @@
 
 
 //изпитни задачи  - https://csharp-book.softuni.bg/chapter-05-loops-exam-problems.html
+// #3 пътуване във времето        
+       
+                int ytl = int.Parse(Console.ReadLine());
+                double n = double.Parse(Console.ReadLine());
+                int years = 18;
+
+                for (int i = 1800; i <= ytl; i++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        n -= 12000;
+                    }
+                    else
+                    {
+                        n -= 12000 + 50 * years;
+                    }
+                    years++;
+                }
+
+                if (n > 0)
+                {
+                    Console.WriteLine("Yes, left money: " + Math.Round(n, 2));
+                }
+                else
+                {
+                    Console.WriteLine("No, not enough money. Need more: " + Math.Abs(Math.Round(n, 2)));
+                }
+         }
+     }
+}
+
+
+
+    
+
+
+
+
 #2 - грешна
 
  int age = int.Parse(Console.ReadLine());
