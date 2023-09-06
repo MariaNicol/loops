@@ -2,8 +2,73 @@
 # Object-oriented programming (OOP) )💯
 #ООП - обектно ориентирано програмиране  
 
-#1 
+#2
+ public class Student //klas
+        {
+            public string name;
+            public int age;  // poleta
+            public string fn; 
+            public void PrintInfo() // metod
+            {
+                Console.WriteLine(name);
+                Console.WriteLine(age);
+                Console.WriteLine(fn);
+            }
+        }
+        static void Main(string[] args)
+        {
+            Student student1 = new Student();
+            student1.name = Console.ReadLine();
+            student1.age = int.Parse(Console.ReadLine());
+            student1.fn = Console.ReadLine();
+            student1.PrintInfo(); 
+        }
 
+#1 
+        public class VOLUME
+        {
+            private int volume;
+            public int Volume
+            {
+                set
+                {
+                    if (value <= 0)
+                    {
+                        Console.WriteLine("0");
+                    }
+                    else if (value > 100)
+                    {
+                        Console.WriteLine("100");
+                    }
+                    else
+                    {
+                        Console.WriteLine(value);
+                    }
+                    this.volume = value;
+                }
+                get
+                {
+                    return this.volume;
+                }
+            }
+
+            public VOLUME()
+            {
+                this.volume = 0;
+            }
+
+            public VOLUME(int vv)
+            {
+                this.volume = vv;
+            }
+
+            static void Main(string[] args)
+            {
+                VOLUME volume = new VOLUME();
+                int inputVolume = int.Parse(Console.ReadLine());
+                volume.Volume = inputVolume;
+                Console.WriteLine(volume.Volume);
+            }
 
 
 
