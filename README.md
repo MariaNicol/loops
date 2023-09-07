@@ -3,11 +3,19 @@
 #ООП - обектно ориентирано програмиране  
 
 #2
- public class Student //klas
+   public class Student //klas
         {
             public string name;
             public int age;  // poleta
-            public string fn; 
+            public string fn;
+            /*
+            public Student(string studentname, int studentage, string studentfn)
+            {
+                name = studentname;
+                age = studentage;
+                fn = studentfn; 
+            }
+            */
             public void PrintInfo() // metod
             {
                 Console.WriteLine(name);
@@ -21,9 +29,13 @@
             student1.name = Console.ReadLine();
             student1.age = int.Parse(Console.ReadLine());
             student1.fn = Console.ReadLine();
-            student1.PrintInfo(); 
-        }
-
+            student1.PrintInfo();
+            Student student2 = new Student();
+            student2.name = Console.ReadLine();
+            student2.age = int.Parse(Console.ReadLine());
+            student2.fn = Console.ReadLine();
+            student2.PrintInfo(); 
+              } 
 #1 
         public class VOLUME
         {
