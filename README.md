@@ -2,9 +2,92 @@
 # Object-oriented programming (OOP) )💯
 #ООП - обектно ориентирано програмиране  
 
-#2
-   public class Student //klas
+#2 
+грешна -
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace zavrushtaneVminaloto
+{
+    class Program
+    {
+
+        public class Student
         {
+            public string Name { get; set; }
+            public int Age { get; set; }
+            public string FacultyNumber { get; set; }
+
+            // Конструктор
+            public Student(string studentName, int studentAge, string studentFacultyNumber)
+            {
+                Name = studentName;
+                Age = studentAge;
+                FacultyNumber = studentFacultyNumber;
+            }
+
+            public void PrintInfo()
+            {
+                Console.WriteLine($"Име: {Name}");
+                Console.WriteLine($"Възраст: {Age}");
+                Console.WriteLine($"Факултетен номер: {FacultyNumber}");
+            }
+        }
+
+        public class University
+        {
+            public string Name { get; set; }
+            public List<Student> Students { get; } = new List<Student>();
+
+            // Конструктор
+            public University(string name)
+            {
+                Name = name;
+            }
+
+            public void AddStudent(Student student)
+            {
+                Students.Add(student);
+            }
+
+            public void PrintStudents()
+            {
+                Console.WriteLine($"Студенти в университета '{Name}':");
+                foreach (var student in Students)
+                {
+                    student.PrintInfo();
+                    Console.WriteLine();
+                }
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            University university = new University("Моят университет");
+
+            Student student1 = new Student("Иван", 20, "12345");
+            Student student2 = new Student("Мария", 22, "54321");
+            Student student3 = new Student("Петър", 24, "28944");
+    }
+        
+        
+
+        }
+        }
+    
+    
+
+
+
+
+--------------
+
+вярна + 
+   public class Student //klas
+        { 
             public string name;
             public int age;  // poleta
             public string fn;
