@@ -2,7 +2,6 @@
 #ООП - обектно ориентирано програмиране  
 
 #2 
-
 грешна -
 using System;
 using System.Collections.Generic;
